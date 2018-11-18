@@ -9,6 +9,7 @@ module.exports = function() {
 
     load('routes', {cwd: 'app'})
         .then('infrastructure')
+        .then('domain')
         .into(app);
 
     return app;
